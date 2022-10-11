@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Szkolenia i kursy komputerowe na najwyszym poziomie. Ucz się od najlepszych. Wysoki poziom szkolenia to nasz standard. Dołącz do nas." />
+  <meta name="keywords" content="szkolenia komputerowe, kursy komputerowe, Power Query, Power Pivot, Power BI Desktop" />
+  <title>Szkolenia komputerowe.</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/about.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./img/lekcja.png">
+ <!-- <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)">
+ -->
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo"><img src="img/logoppcomp.png" width="150" alt="Logo firmy PP Comp" >  </a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">PP Comp</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-toggler>Szkolenia</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-toggler>O nas</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-toggler>Najpopularniejsze</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#event" class="navbar-link" data-nav-toggler>Usługi IT</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Wydawnictwo</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Kontakt</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Logowanie / Rejestracja</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Szukaj tutaj..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+           <p class="section-subtitle">Poznaj nasza firme</p> 
+
+            <h2 class="h1 hero-title">O firmie</h2>
+
+            <p class="hero-text">
+              Firma PP Comp Informatyczna Obsługa Firm działa od kilkunastu lat na polskim rynku. 
+              Zatrudnia i współpracuje z wieloma specjalistami w swoich dziedzinach. Prowadzi działalność o profilu informatycznym.</p>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">wiecej</span> 
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          
+        
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+          <div class="about-content">
+
+            <p class="section-subtitle">Kim jesteśmy</p>
+
+            <h2 class="h2 section-title">Zapoznaj sie z nasza firma</h2>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-1">
+                  <img src="./assets/images/placeholder.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">DLA KOGO JESTEŚMY</h3>
+
+                  <p class="item-text">
+                    firmy niezależnie od wielkości (mikro, małe, średnie, duże, korporacje) osoby prywatne, indywidualnie
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-2">
+                  <img src="./assets/images/placeholder.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">GDZIE DZIAŁAMY</h3>
+                  
+                  <p class="item-text">
+                    <ul>
+                      <li>województwo mazowieckie: Warszawa, Płock</li>
+                      <li>województwo śląskie: Katowice</li>
+                      <li>województwo łódzkie: Łódź</li>
+                      <li>województwo wielkopolskie: Poznań</li>
+                      <li>województwo małopolskie: Kraków</li>
+                      <li>województwo pomorskie: Gdańsk</li>
+                      <li>województwo dolnośląskie: Wrocław</li>
+                      <li>województwo lubelskie: Lublin</li>
+                    </ul>
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-3">
+                  <img src="./assets/images/placeholder.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">ATUTY</h3>
+
+                  <p class="item-text">
+                    Jesteśmy bezpośrednim wykonawcą co znacząco obniża koszty pomijając pośredników. Nasza kadra to specjaliści z potwierdzonymi kompetencjami. Działamy solidnie i na wysokim poziomie. Jesteśmy małą firmą i ważny jest dla nas każdy klient. Materiały, plany, skrypty są naszego autorstwa. Posiadamy najnowsze komputery tak aby szkolenie przebiegało w komfortowych warunkach.
+
+
+                  </p>
+                </div>
+
+              </li>
+              <li class="about-item">
+                <div class="item-icon item-icon-1">
+                  <img src="./assets/images/placeholder.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+                <div class=item-icon item-icon-3">
+                  <h3 class="h3 item-title">NASZA HISTORIA</h3>
+                  <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+ 
+                </div>
+              </li>
+              <li class="about-item">
+
+                <div class="item-icon item-icon-3">
+                  <img src="./assets/images/placeholder.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">POMOC</h3>
+
+                  <p class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            
+             
+            
+
+
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">Poznaj nas</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          <div>
+            
+              <a href=https://ppcomp.pl/index.php/o-firmie/rodo class="btn btn-primary">
+                <span class="span">Regulamin</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+  
+          </a>    
+          
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+          
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta" aria-label="workshop" style="background-image: url('./assets/images/cta-bg.png')">
+        <div class="container">
+
+          
+
+          <div class="cta-content">
+            <p class="section-subtitle">Nasze lokalizacje</p>
+            <h2 class="h2 section-title">Mapa:</h2>
+          </div>
+          
+<figure class="cta-banner">
+            <img src="./assets/images/map.png" width="1320" height="1380" loading="lazy" alt="cta banner"
+              class="img-cover">
+          </figure>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event" id="event" aria-label="event">
+        <div class="container">
+
+          
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">PP Comp</a>
+
+          <p class="section-text">
+            Firma PP Comp świadczy usługi informatyczne od wielu lat.
+            Jest ceniona wśród firm szkoleniowych za bardzo wysokie kompetencje, 
+            oraz za jakość usług informatycznych. 
+            Wielu klientów zaufało nam i ciągle są z nami. 
+            Kursanci zaś powracają na nasze szkolenia aby roziwjać się razem z nami. 
+            Dołącz do naszego grona.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Zobacz</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">O nas</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Najbliższe terminy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Portal wiedzy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pyania FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Referencje</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Polityka prywatności</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Przydatne linki</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Kontakt z nami</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Cennik</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Trenerzy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popularne szkolenia</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Kontakt do nas</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              ul. Magnacka 4, 02-496 Warszawa
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657839" class="footer-link">+ 48 607-773-089</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657840" class="footer-link">+ 48 609-067-873</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:biuro@ppcomp.pl" class="footer-link">biuro@ppcomp.pl</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2022 PP Comp. Wszelkie prawa zastreżone<a href="#" class="copyright-link"> PP Comp</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
