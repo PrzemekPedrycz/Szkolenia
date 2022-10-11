@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wydawnictwo</title>
+      <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo"><img src="img/logoppcomp.png" width="150" alt="Logo firmy PP Comp" >  </a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">PP Comp</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-toggler>Szkolenia</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-toggler>O nas</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-toggler>Najpopularniejsze</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#event" class="navbar-link" data-nav-toggler>Usługi IT</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Wydawnictwo</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Kontakt</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Logowanie / Rejestracja</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Szukaj tutaj..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+        <section class="section"  style="background-image: url('./assets/images/course-bg.jpg')">
+            <div class="container">
+                <h2 class="h2 section-subtitle ">Wydawnictwo</h2>
+                <h3 class="h3 item-title">W najbliższym czasie ukażą się nowe wydania książek:</h3>
+       
+               <ul class="about-list">
+                <li class="about-item">
+
+                  <div class="item-icon item-icon-2">
+                    <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                  </div>
+  
+                  <div>
+                    <a href="encyklopedia.html"><h3 class="h3 item-title social-link">Encyklopedia Excel, Przemysław Pedrycz</h3></a>
+  
+                    <p class="item-text">
+                      Jest to już drugie wydanie książki poświęconej programowi MS Excel. Wydanie to jest zaktualizowane do Excela wersji 2016. Książka jest także w kilku działach poszerzona o dodatkowe materiał. Oprócz zaktualizowanych treści posiada także nową okładkę. Serdecznie zapraszamy do lektury nowego wydania naszej publikacji.
+                      
+                    </p>
+                  </div>
+  
+                </li>
+                <li class="about-item">
+
+                  <div class="item-icon item-icon-2">
+                    <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                  </div>
+  
+                  <div>
+                    <a href="powerquery.html"><h3 class="h3 item-title social-link">Power Query w przykładach, Przemysław Pedrycz</h3></a>
+  
+                    <p class="item-text">
+                      Książka omawia na przykładach dodatek Power Query.. Wydanie to jest dostosowane do Excela wersji 2013.
+
+                      
+                    </p>
+                  </div>
+  
+                </li>
+                <li class="about-item">
+
+                  <div class="item-icon item-icon-2">
+                    <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                  </div>
+  
+                  <div>
+                    <a href="programowanievba.html"><h3 class="h3 item-title social-link">Programowanie VBA - Excel, Przemysław Pedrycz</h3></a>
+  
+                    <p class="item-text">
+                      Książka omawia w sposób syntetyczny programowanie VBA dla Excela 2010.
+
+                      
+                    </p>
+                  </div>
+  
+                </li>
+                <li class="about-item">
+
+                  <div class="item-icon item-icon-2">
+                    <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                  </div>
+  
+                  <div>
+                    <a href="funkcjeexcel.html"><h3 class="h3 item-title social-link">Funkcje Excel, Joanna Pedrycz</h3></a>
+  
+                    <p class="item-text">
+                      Czy mogą być funkcje Excela omówione w prostu i zrozumiały sposób. Publikacja próbuje zmierzyć się z tym zadaniem.
+
+                      
+                    </p>
+                  </div>
+  
+                </li> 
+                <li class="about-item">
+
+                  <div class="item-icon item-icon-2">
+                    <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                  </div>
+  
+                  <div>
+                    <a href="naukazegara.html"><h3 class="h3 item-title social-link">Nauka zegara, Przemysław Pedrycz</h3></a>
+  
+                    <p class="item-text">
+                      Zegara kiedyś trzeba było się nauczyć. Teraz przyszedł czas na twoje dzieci? Z pomocą tej książki znajdziesz ponad 1000 zegarów na których trzeba będzie coś zrobić.
+
+                      
+                    </p>
+                  </div>
+  
+                </li>
+                <li class="about-item">
+
+                  <div class="item-icon item-icon-2">
+                    <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                  </div>
+  
+                  <div>
+                    <a href="ecdlbase.html"><h3 class="h3 item-title social-link">ECDL Base. Teoria i zadania, Przemysław Pedrycz</h3></a>
+  
+                    <p class="item-text">
+                      Zdać egzamin ECDL to nie jest takie proste zadanie. Trzeba poznać trochę teorii ale także rozwiązać wiele zadań. W książce tej znajdziesz zbiór zadań, które pomogą Ci przygotować się do zdania egzaminu z ECDL Base.
+
+                      
+                    </p>
+                  </div>
+  
+                </li>
+               </ul>
+           
+            </div> 
+
+        </section>
+    
+
+ <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">PP Comp</a>
+
+          <p class="section-text">
+            Firma PP Comp świadczy usługi informatyczne od wielu lat.
+            Jest ceniona wśród firm szkoleniowych za bardzo wysokie kompetencje, 
+            oraz za jakość usług informatycznych. 
+            Wielu klientów zaufało nam i ciągle są z nami. 
+            Kursanci zaś powracają na nasze szkolenia aby roziwjać się razem z nami. 
+            Dołącz do naszego grona.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Zobacz</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">O nas</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Najbliższe terminy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Portal wiedzy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pyania FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Referencje</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Polityka prywatności</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Przydatne linki</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Kontakt z nami</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Cennik</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Trenerzy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popularne szkolenia</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Kontakt do nas</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              ul. Magnacka 4, 02-496 Warszawa
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657839" class="footer-link">+ 48 607-773-089</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657840" class="footer-link">+ 48 609-067-873</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:biuro@ppcomp.pl" class="footer-link">biuro@ppcomp.pl</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2022 PP Comp. Wszelkie prawa zastreżone<a href="#" class="copyright-link"> PP Comp</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+        
+</body>
+</html>
