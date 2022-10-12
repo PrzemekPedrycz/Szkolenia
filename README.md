@@ -1,6 +1,6 @@
 <div align="center">
   
-   <br />
+  <br />
   <br />
 
   <h2 align="center">Strona szkoleń komputerowych - strona projektu</h2>
@@ -12,6 +12,11 @@
 </div>
 
 <br />
+Folder szkolenia - zawiera pliki ze szkoleniam
+Kazde szkolenie uzywa stylu szkolenie.css
+
+Folder wydawnictwo - zawiera pliki z ksiazkami
+
 
 ### Demo Screeshots
 
