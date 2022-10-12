@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Szkolenia i kursy komputerowe na najwyszym poziomie. Ucz się od najlepszych. Wysoki poziom szkolenia to nasz standard. Dołącz do nas." />
+  <meta name="keywords" content="szkolenia komputerowe, kursy komputerowe, Power Query, Power Pivot, Power BI Desktop" />
+  <title>Szkolenia komputerowe.</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/egzaminy.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./img/lekcja.png">
+ <!-- <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)">
+ -->
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo"><img src="img/logoppcomp.png" width="150" alt="Logo firmy PP Comp" >  </a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">PP Comp</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-toggler>Szkolenia</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-toggler>O nas</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-toggler>Najpopularniejsze</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#event" class="navbar-link" data-nav-toggler>Usługi IT</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Wydawnictwo</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Kontakt</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Logowanie / Rejestracja</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Szukaj tutaj..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+           <p class="section-subtitle">Znajdź to co potrzebujesz</p> 
+
+            <h2 class="h1 hero-title">Szkolenia komputerowe</h2>
+
+            <p class="hero-text">
+              Wybierz kategorie szkolenia, które cię interesuje aby poznać szczegóły</p>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">Kategorie szkoleń</span> 
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <img src="./img/lekcja1.png" width="500" height="500" loading="lazy" alt="Szkolenie komputerowe"
+              class="w-100">
+
+            <img src="./img/lekcja2.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./img/lekcja3.png" width="188" height="150" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2">
+
+          </figure>
+        
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+         <div id="mainUpText"> ECDL! </div>
+         <div class="mainDownText"> ECDL - European Computer Driving Licence
+         Europejski Certyfikat Umiejętności Komputerowych.</div>
+         Certyfikacja ECDL istnieje od roku 1997. Certyfikacja cały czas rozwija się a także nieustannie zmienia aby dostosować się do obecnych czasów. Sama certyfikacja początkowo miała zasięg europejski (European) natomiast w chwili obecnej została rozszerzona i ma zasięg międzynarodowy (Internaltional). Naczelny nadzór nad certyfikacją sprawuje Fundacja ECDL z Irlandii. Sama Fundacja jakiś czas temu zmieniła swoją nazwę z ECDL na Fundacja ICDL wskazując na zasięg międzynarodowy. Fundacja wydaje certyfikaty już w ponad 150 krajach a egzaminy można zdawać w 41 językach. W Polsce jednostką nadrzędną odpowiadającą za certyfikat ECDL jest Polskie Towarzystwo Informatyczne.
+         
+         <div class="mainDownText" style="margin-top: 20px;">Zasady certyfikacji</div>
+         <div style="margin-top: 10px;">
+         Certyfikat ECDL jest przyznawany we wszystkich krajach na tych samych zasadach. Oznacza to, że aby zdać na egzamin ECDL należy wykazać się wszędzie dokładnie taką samą wiedzą. Testy egzaminacyjne są tłumaczone na języki narodowe i wszędzie są takie same. Takie podejście umożliwia miarodajny i ujednolicony sposób przyznawania certyfikatu na całym świecie dlatego jest dla wielu pracodawców jasnym i zrozumiałym potwierdzeniem umiejętności komputerowych pracownika. Zatem certyfikat ECDL otrzymany w Polsce jest honorowany i rozpoznawany na całym świecie. Certyfikacja ICDL/ECDL jest uznawana za jedną z najlepszych na świecie certyfikacji potwierdzającą podstawowe umiejętności komputerowe. 
+         </div>
+         <div class="mainDownText" style="margin-top: 20px;">Zakres certyfikacji</div>
+         
+         <div style="margin-top: 10px;">Zakres wiedzy jaki potrzebny jest aby zdać na każdy konkretny certyfikat jest zebrany w sylabusie do konkretnego certyfikatu. Sylabus jest taki sam dla każdego kraju prowadzącego certyfikację ECDL/ICDL. Więcej szczegółów znajdziesz w sylabusie do danego modułu.
+         </div>
+        </div>
+        </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div style="text-align: center; font-size: 35px;">Lista certyfikatow</div>
+        <div style="text-align: center; font-size: 20px;">ECDL BASE
+        </div>
+        <!--<a href="#1"><button>DGC1</button></a> Przycisk-->
+        <div class="container">
+            <a name="1"> <strong >ECDL PROFILE DIGCOMP 1</strong><br /> – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) – 2 moduły ECDL<br /><br />
+
+            <a name="2"><strong>ECDL PROFILE DIGCOMP 2</strong> <br /> + Komunikacja – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) – 2 moduły ECDL,</a><br /><br />
+
+             <a name="3"><strong>ECDL PROFILE DIGCOMP 3</strong><br /> Bezpieczeństwo – ECDL IT Security (S3) – 1 moduł ECDL,</a><br /><br />
+
+              <a name="4"><strong>ECDL PROFILE DIGCOMP 4</strong><br /> Informacja + Komunikacja + Bezpieczeństwo – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL IT Security (S3) – 3 moduły ECDL,</a><br /><br />
+
+              <a name="5"><strong>ECDL PROFILE DIGCOMP 5</strong><br /> Tworzenie treści – ECDL Podstawy pracy z komputerem (B1) + ECDL Przetwarzanie tekstów (B3) + ECDLArkusze kalkulacyjne (B4) – 3 moduły ECDL,</a><br /><br />
+
+              <a name="6"><strong>ECDL PROFILE DIGCOMP 6</strong><br /> Informacja + Komunikacja + Tworzenie treści – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL Przetwarzanie tekstów (B3) + ECDL Arkusze kalkulacyjne (B4) – 4 moduły ECDL, tożsamy z ECDL BASE,</a><br /><br />
+
+              <a name="7"><strong>ECDL PROFILE DIGCOMP 7</strong><br /> Tworzenie treści + Bezpieczeństwo – ECDL Podstawy pracy z komputerem (B1) + ECDL Przetwarzanie tekstów (B3) + ECDL Arkusze kalkulacyjne (B4) + ECDL IT Security (S3) – 4 moduły ECDL,</a><br /><br />
+
+              <a name="8"><strong>ECDL PROFILE DIGCOMP 8</strong><br /> Informacja + Komunikacja + Tworzenie treści + Bezpieczeństwo – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL Przetwarzanie tekstów (B3) + ECDL Arkusze kalkulacyjne (B4) + ECDL IT Security (S3) – 5 modułów ECDL,</a><br /><br />
+
+              <a name="9"><strong>ECDL PROFILE DIGCOMP 9</strong><br /> Informacja + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL Rozwiązywanie problemów (S9) – 3 moduły ECDL,</a><br /><br />
+
+              <a name="10"><strong>ECDL PROFILE DIGCOMP 10</strong><br /> Informacja + Komunikacja + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL Rozwiązywanie problemów (S9) – 3 moduły ECDL,</a><br /><br />
+
+              <a name="11"><strong>ECDL PROFILE DIGCOMP 11</strong><br /> Bezpieczeństwo + Rozwiązywanie problemów – ECDL IT Security (S3) + ECDL Rozwiązywanie problemów (S9) – 2 moduły ECDL,</a><br /><br />
+
+              <a name="12"><strong>ECDL PROFILE DIGCOMP 12</strong><br /> Informacja + Komunikacja + Bezpieczeństwo + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL IT Security (S3) + ECDL Rozwiązywanie problemów (S9) – 4 moduły ECDL,</a><br /><br />
+
+              <a name="13"><strong>ECDL PROFILE DIGCOMP 13</strong><br /> Tworzenie treści + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Przetwarzanie tekstów (B3) + ECDL Arkusze kalkulacyjne (B4) + ECDL Rozwiązywanie problemów (S9) – 4 moduły ECDL,</a><br /><br />
+ 
+              <a name="14"><strong>ECDL PROFILE DIGCOMP 14</strong><br /> Informacja + Komunikacja +Tworzenie treści + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL Przetwarzanie tekstów (B3) + ECDL Arkusze kalkulacyjne (B4) + ECDL Rozwiązywanie problemów (S9) – 5 modułów ECDL,</a><br /><br />
+
+              <a name="15"><strong>ECDL PROFILE DIGCOMP 15</strong><br /> Tworzenie treści + Bezpieczeństwo + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Przetwarzanie tekstów (B3) + ECDL Arkusze kalkulacyjne (B4) + ECDL IT Security (S3) + ECDL Rozwiązywanie problemów (S9) – 5 modułów ECDL,</a><br /><br />
+
+              <a name="16"><strong>ECDL PROFILE DIGCOMP 16</strong><br /> Informacja + Komunikacja + Tworzenie treści + Bezpieczeństwo + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL Przetwarzanie tekstów (B3) + ECDL Arkusze kalkulacyjne (B4) + ECDL IT Security (S3) + ECDL Rozwiązywanie problemów (S9) – 6 modułów ECDL,</a><br /><br />
+
+              <a name="17"><strong>ECDL PROFILE DIGCOMP 17</strong><br /> Rozwiązywanie problemów – ECDL Rozwiązywanie problemów (S9) – 1 moduł ECDL,</a><br /><br />
+
+              <a name="18"><strong>ECDL PROFILE DIGCOMP 18</strong><br /> po 1-3 kompetencje z każdego z obszarów ramy DIGCOMP na poziomie zaawansowania A – ECDL Podstawy pracy z komputerem (B1) – 1 moduł ECDL (certyfikat dotyczy kompetencji we wszystkich obszarach ramy DIGCOMP, aczkolwiek nie wszystkich kompetencji),</a><br /><br />
+
+              <a name="19"><strong>ECDL PROFILE DIGCOMP 19</strong><br /> Informacja + Komunikacja + Tworzenie treści + Bezpieczeństwo + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL Przetwarzanie tekstów (B3) + ECDL Web Editing (S6) + ECDL IT Security (S3) + ECDL Rozwiązywanie problemów (S9) – 6 modułów ECDL,</a><br /><br />
+
+              <a name="20"><strong>ECDL PROFILE DIGCOMP 20</strong><br /> Informacja + Komunikacja + Tworzenie treści + Bezpieczeństwo + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL IT Security (S3) + ECDL CAD (S8) + ECDL Rozwiązywanie problemów (S9) – 5 modułów ECDL,</a><br /><br />
+
+              <a name="21"><strong>ECDL PROFILE DIGCOMP 21</strong><br /> Informacja + Komunikacja + Tworzenie treści + Rozwiązywanie problemów – ECDL Podstawy pracy z komputerem (B1) + ECDL Podstawy pracy w sieci (B2) + ECDL CAD (S8) + ECDL Rozwiązywanie problemów (S9) – 4 moduły ECDL,</a><br /><br />
+
+              <a name="22"><strong>ECDL PROFILE DIGCOMP 22</strong><br /> Informacja + Komunikacja + Bezpieczeństwo – ECDL Podstawy pracy w sieci (B2) + ECDL Przetwarzanie tekstów (B3) + ECDL Arkusze kalkulacyjne (B4) + ECDL IT Security (S3) – 4 moduły ECDL.</a>
+
+
+          
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+          <div style="margin-bottom: 10px; font-size: 35px;">Jak zdać egzamin?</div>
+          <div style="font-size: 20px;">
+          Aby przystąpić do egzaminu ECDL należy minimum 3 dni wcześniej zgłosić się do wybranego centrum egzaminacyjnego. Centrum wyznaczy egzaminatora oraz miejsce egzaminu. Aby zapisać się na egzamin napisz wiadomość na adres e-mail: egzamin@ppcomp.pl
+          Drugim ważnym krokiem, który należy wykonać przed przystąpieniem do egzaminu jest założenie konta w systemie ECDL na stronie www.eecdl.pl
+          
+          Podczas zakładania konta należy podać swój numer pesel, który będzie również loginem do konta. Na koncie będą kolekcjonowały się każdorazowo zdawane egzaminy. Po zalogowaniu będą widoczne wszystkich odbytych egzaminów oraz ich wyniki.   
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta" aria-label="workshop" style="background-image: url('./assets/images/cta-bg.png')">
+        <div class="container">
+          <div class="mainDownText">Cennik certyfikacji ECDL!</div>
+
+
+          <img src="img/table.png">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event" id="event" aria-label="event">
+        <div class="container">
+          <div style="font-size: 20px;">
+          <div style="font-size: 40px;">Certyfikat</div>
+
+          Obecnie certyfikaty ECDL są wydawane w formie elektronicznej. Można go pobrać ze swojego panelu na stronie www.eecdl.pl
+          <div class="mainDownText" style="margin-top: 25px;">
+          Weryfikacja certyfikatu
+          </div>
+          Weryfikacja autentyczności certyfikatu elektronicznego odbywa się na stronie https://weryfikacja.pti.org.pl/ gdzie należy wprowadzić indywidualny kod weryfikowanego certyfikatu znajdujący się w lewy dolny rogu certyfikatu poniżej kodu QR. Następnie na podstawie wprowadzonego kodu zostanie wygenerowany certyfikat jak jest przypisany do powyższego kodu. Na certyfikacie będzie lista wszystkich zdawanych egzaminów ECDL i na tej podstawie będzie można sprawdzić jego autentyczność. należy pamiętać że na wygenerowanym certyfikacie weryfikacyjnym imię i nazwisko oraz numer pesel są zakodowane. 
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">PP Comp</a>
+
+          <p class="section-text">
+            Firma PP Comp świadczy usługi informatyczne od wielu lat.
+            Jest ceniona wśród firm szkoleniowych za bardzo wysokie kompetencje, 
+            oraz za jakość usług informatycznych. 
+            Wielu klientów zaufało nam i ciągle są z nami. 
+            Kursanci zaś powracają na nasze szkolenia aby rozwijać się razem z nami. 
+            Dołącz do naszego grona.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Zobacz</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">O nas</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Najbliższe terminy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Portal wiedzy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pyania FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Referencje</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Polityka prywatności</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Przydatne linki</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Kontakt z nami</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Cennik</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Trenerzy</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popularne szkolenia</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Kontakt do nas</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              ul. Magnacka 4, 02-496 Warszawa
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657839" class="footer-link">+ 48 607-773-089</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657840" class="footer-link">+ 48 609-067-873</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:biuro@ppcomp.pl" class="footer-link">biuro@ppcomp.pl</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2022 PP Comp. Wszelkie prawa zastreżone<a href="#" class="copyright-link"> PP Comp</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
